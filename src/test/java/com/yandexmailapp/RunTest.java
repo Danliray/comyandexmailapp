@@ -32,8 +32,8 @@ import java.net.URL;
 
 public class RunTest {
 
-    @Managed (driver = "appium")
-    WebDriver driver;
+    //@Managed (driver = "appium")
+    //WebDriver driver;
      //AppiumDriver driver;
 
 //

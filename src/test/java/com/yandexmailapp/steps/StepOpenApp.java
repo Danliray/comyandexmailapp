@@ -16,8 +16,8 @@ import java.net.URL;
 public class StepOpenApp extends UIInteractionSteps {
 
     //AppiumDriver driver;
-    MainPage mainPage;
 
+    MainPage mainPage;
     @Step
     public void goHomePage() throws Throwable{
 

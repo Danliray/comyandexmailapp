@@ -5,7 +5,6 @@ import net.thucydides.core.annotations.DefaultUrl;
 import org.apache.xml.utils.res.XResources_ja_JP_I;
 import org.openqa.selenium.WebDriver;
 
-//@DefaultUrl("https://duckduckgo.com")
 public class MainPage extends PageObject {
 
     public void openPage(){

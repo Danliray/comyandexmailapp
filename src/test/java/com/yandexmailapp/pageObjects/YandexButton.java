@@ -21,18 +21,6 @@ public class YandexButton extends MobilePageObject {
         super(driver);
     }
 
-
-//    public WebDriver newDriver() {
-//        try {
-//            DesiredCapabilities capabilities = DesiredCapabilities.android();
-//            // Add
-//            return new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-//        }
-//        catch (IOException e) {
-//            throw new Error(e);
-//        }
-//    }
-
     @AndroidFindBy(id="ru.yandex.mail:id/list_yandex")
     private WebElement mailruBut;
 
@@ -41,6 +29,7 @@ public class YandexButton extends MobilePageObject {
         //WebDriverWait wait = new WebDriverWait(getDriver(), 60);
         //wait.until(ExpectedConditions.visibilityOfElementLocated((org.openqa.selenium.By) mailruBut));
         //$(By.id("ru.yandex.mail:id/list_mailru")).click();
-        $(mailruBut).click();
+
+        $(mailruBut).waitUntilEnabled().click();
     }
 }
