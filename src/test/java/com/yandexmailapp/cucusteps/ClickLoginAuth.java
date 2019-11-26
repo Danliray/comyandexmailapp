@@ -1,12 +1,10 @@
 package com.yandexmailapp.cucusteps;
 
 import com.yandexmailapp.steps.StepLoginAuth;
-import com.yandexmailapp.steps.StepYandexButton;
 import cucumber.api.PendingException;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Когда;
 import cucumber.api.java.ru.Тогда;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 
 public class ClickLoginAuth {
