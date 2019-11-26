@@ -18,8 +18,4 @@ public class StepYandexButton extends UIInteractionSteps {
         yandexButton.checkPole();
     }
 
-//    @Step
-//    public void checkButtonSigh(String sigh) throws Throwable{
-//        yandexButton.checkButton(sigh);
-//    }
 }

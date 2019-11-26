@@ -15,7 +15,6 @@ public class EnterLoginEmail extends MobilePageObject {
     @AndroidFindBy(id = "ru.yandex.mail:id/edit_login")
     private WebElement editEmail;
 
-    //@AndroidFindBy (id = "ru.yandex.mail:id/button_next")
     @AndroidFindBy (id = "ru.yandex.mail:id/button_next")
     private WebElement clickButton;
 

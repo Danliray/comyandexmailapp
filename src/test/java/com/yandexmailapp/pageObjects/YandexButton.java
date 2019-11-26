@@ -31,10 +31,6 @@ public class YandexButton extends MobilePageObject {
     private WebElement checkButton;
 
     public void clickButton(){
-        //$(By.xpath("//View[@resource-id='auth']/View[1]/EditText[0]")).sendKeys("\"testovyy.akkaunt1@bk.ru\"");
-        //WebDriverWait wait = new WebDriverWait(getDriver(), 60);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated((org.openqa.selenium.By) mailruBut));
-        //$(By.id("ru.yandex.mail:id/list_mailru")).click();
 
         $(mailruBut).waitUntilEnabled().click();
     }
