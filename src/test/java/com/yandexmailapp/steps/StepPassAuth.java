@@ -13,8 +13,23 @@ public class StepPassAuth  extends UIInteractionSteps {
     }
 
     @Step
-    public void clickToInboxForm() throws Throwable{
-        enterPassword.clickToInbox();
+    public void clickSighButton(String sighBut) throws Throwable{
+        enterPassword.clickSigh(sighBut);
+    }
+
+    @Step
+    public void clickToSkipForm(String skip) throws Throwable{
+        enterPassword.clickToSkip(skip);
+    }
+
+    @Step
+    public void clickDoneForm(String done) throws Throwable{
+        enterPassword.clickToDone(done);
+    }
+
+    @Step
+    public void clickKrest() throws Throwable{
+        enterPassword.clickToKrest();
     }
 
     @Step

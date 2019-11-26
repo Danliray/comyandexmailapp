@@ -12,14 +12,13 @@ public class EnterLoginEmail extends MobilePageObject {
         super(driver);
     }
 
-    @AndroidFindBy(id = "ru.yandex.mail:id/edit_login")
-    //@AndroidFindBy(xpath = "[@resource-id='ru.yandex.mail:id/edit_login'")
+    @AndroidFindBy(id = "ru.mail.mailapp:id/login")
     private WebElement editEmail;
 
-    @AndroidFindBy (id = "ru.yandex.mail:id/button_next")
+    @AndroidFindBy (id = "ru.mail.mailapp:id/proceed_to_pass")
     private WebElement clickButton;
 
-    @AndroidFindBy(id = "ru.yandex.mail:id/text_primary_display_name")
+    @AndroidFindBy(id = "ru.mail.mailapp:id/user_email")
     private WebElement labelEmail;
 
     public void editEmail(String email){
@@ -28,7 +27,7 @@ public class EnterLoginEmail extends MobilePageObject {
 
     public void clickButton(String buttonText){
         $(clickButton).waitUntilVisible().shouldContainText(buttonText);
-        $(clickButton).waitUntilClickable().click();
+        $(clickButton).click();
     }
 
     public void labelEmail(String label){

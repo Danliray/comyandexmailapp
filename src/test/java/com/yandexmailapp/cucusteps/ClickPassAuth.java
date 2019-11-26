@@ -17,11 +17,27 @@ public class ClickPassAuth {
         throw new PendingException();
     }
 
-
-    @И("^кликает на кнопку Continue to inbox формы приветствия$")
-    public void кликаетНаКнопкуContinueToInboxФормыПриветствия() throws Throwable{
-        stepPassAuth.clickToInboxForm();
+    @И("^пользователь кликает на кнопку \"([^\"]*)\"$")
+    public void пользовательКликаетНаКнопку(String sighBut) throws Throwable {
+        stepPassAuth.clickSighButton(sighBut);
         throw new PendingException();
+    }
+
+    @И("^нажимает на кнопку \"([^\"]*)\"$")
+    public void нажимаетНаКнопкуДваРаза(String skip) throws Throwable {
+        stepPassAuth.clickToSkipForm(skip);
+        throw new PendingException();
+    }
+
+    @И("^кликает на \"([^\"]*)\"$")
+    public void кликаетНа(String done) throws Throwable {
+        stepPassAuth.clickDoneForm(done);
+        throw new PendingException();
+    }
+
+    @И("^кликает на крестик$")
+    public void кликаетНаКрестик() throws Throwable{
+        stepPassAuth.clickKrest();
     }
 
     @Тогда("^пользователь переходит на страницу \"([^\"]*)\"$")
@@ -29,6 +45,4 @@ public class ClickPassAuth {
         stepPassAuth.checkInboxForm(inbox);
         throw new PendingException();
     }
-
-
 }
