@@ -13,6 +13,7 @@ public class EnterLoginEmail extends MobilePageObject {
     }
 
     @AndroidFindBy(id = "ru.yandex.mail:id/edit_login")
+    //@AndroidFindBy(xpath = "[@resource-id='ru.yandex.mail:id/edit_login'")
     private WebElement editEmail;
 
     @AndroidFindBy (id = "ru.yandex.mail:id/button_next")
