@@ -27,7 +27,7 @@ import java.net.URL;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features"
-        //glue = "com.yandexmailruapp"
+        //glue = "com.yandexmailapp"
 )
 
 public class RunTest {
@@ -62,10 +62,10 @@ public class RunTest {
 //        driver.findElement(By.xpath("//View[@resource-id='auth']/View[1]/EditText[0]")).click();
 //}
 
-    @After
-    public void tearDown(){
-        //driver.quit();
-    }
+//    @After
+//    public void tearDown(){
+//        //driver.quit();
+//    }
 
 
 //    public void firstTest() {

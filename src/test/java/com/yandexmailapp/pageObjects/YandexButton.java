@@ -24,6 +24,12 @@ public class YandexButton extends MobilePageObject {
     @AndroidFindBy(id="ru.yandex.mail:id/list_yandex")
     private WebElement mailruBut;
 
+    @AndroidFindBy(id="ru.yandex.mail:id/layout_login")
+    private WebElement checkPole;
+
+    @AndroidFindBy(id="ru.yandex.mail:id/button_next")
+    private WebElement checkButton;
+
     public void clickButton(){
         //$(By.xpath("//View[@resource-id='auth']/View[1]/EditText[0]")).sendKeys("\"testovyy.akkaunt1@bk.ru\"");
         //WebDriverWait wait = new WebDriverWait(getDriver(), 60);
@@ -32,4 +38,12 @@ public class YandexButton extends MobilePageObject {
 
         $(mailruBut).waitUntilEnabled().click();
     }
+
+    public void checkPole(){
+        $(checkPole).waitUntilEnabled().shouldBeVisible();;
+    }
+
+//    public void checkButton(String sigh){
+//        $(checkButton).waitUntilEnabled().shouldContainText(sigh);;
+//    }
 }
