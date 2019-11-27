@@ -13,8 +13,8 @@ public class MySettings extends MobilePageObject {
     @AndroidFindBy(id = "ru.mail.mailapp:id/open_settings_screen_btn")
     private WebElement settingButton;
 
-    @AndroidFindBy(xpath="//android.view.ViewGroup[resource-id='android:id/action_bar']" +
-            "/android.widget.TextView[2]")
+    @AndroidFindBy(xpath="//android.view.ViewGroup[@resource-id='android:id/action_bar']" +
+            "/android.widget.TextView[@index='2']")
     private WebElement goSettingCheck;
 
     public void settingButton(){

@@ -8,8 +8,7 @@ public class MenuCheckAuth extends MobilePageObject {
     public MenuCheckAuth (WebDriver driver) {
         super(driver);
     }
-        @AndroidFindBy(xpath="//android.view.ViewGroup[resource-id='ru.mail.mailapp:id/toolbar']" +
-                "/android.widget.ImageButton[@content-desc='Navigate up']")
+        @AndroidFindBy(xpath="//android.widget.ImageButton[@content-desc='Navigate up']")
         private WebElement openMenu;
 
         @AndroidFindBy(id="ru.mail.mailapp:id/current_account_login")

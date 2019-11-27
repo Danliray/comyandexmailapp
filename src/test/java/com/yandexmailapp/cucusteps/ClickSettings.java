@@ -18,6 +18,6 @@ public class ClickSettings {
     @Тогда("^пользователь переходит в \"([^\"]*)\"$")
     public void пользовательПереходитВ(String sttngs) throws Throwable {
         stepSettings.goToSettings(sttngs);
-        throw new PendingException();
+
     }
 }

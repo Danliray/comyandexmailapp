@@ -14,7 +14,7 @@ public class ClickLoginAuth {
     @Когда("^пользователь вводит в поле email \"([^\"]*)\"$")
     public void пользовательВводитВПолеEmail(String email) throws Throwable {
         stepLoginAuth.enterEmail(email);
-        throw new PendingException();
+
     }
 
 //    @И("^пользователь нажимает на кнопку Next$")
@@ -25,13 +25,13 @@ public class ClickLoginAuth {
     @И("^пользователь нажимает на кнопку \"([^\"]*)\"$")
     public void пользовательНажимаетНаКнопку(String buttonText) throws Throwable {
         stepLoginAuth.clickButtonNext(buttonText);
-        throw new PendingException();
+
     }
 
     @Тогда("^на форме отображается строка email \"([^\"]*)\"$")
     public void наФормеОтображаетсяСтрокаEmail(String label) throws Throwable {
         stepLoginAuth.checkLabelEmail(label);
-        throw new PendingException();
+
     }
 
 

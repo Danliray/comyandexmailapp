@@ -18,6 +18,6 @@ public class ClickMenuCheckAuth {
     @Тогда("^отображается email \"([^\"]*)\"$")
     public void отображаетсяEmail(String labelEm) throws Throwable {
         stepMenuCheckAuth.menuLabelEmail(labelEm);
-        throw new PendingException();
+
     }
 }

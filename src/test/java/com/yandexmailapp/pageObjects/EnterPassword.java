@@ -33,7 +33,7 @@ public class EnterPassword  extends MobilePageObject {
 
     public void clickSigh(String sighBut){
         $(clickSigh).waitUntilVisible().shouldContainText(sighBut);
-        $(clickSigh).sendKeys(sighBut);
+        $(clickSigh).click();
     }
 
     public void clickToSkip(String skip){
